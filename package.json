@@ -44,7 +44,7 @@
     "lint:fix": "mwts fix",
     "ci": "npm run cov",
     "build": "midway-bin build -c",
-    "package": "midway-bin package --skipZip --npm=yarn",
+    "package": "midway-bin package --npm=yarn",
     "deploy": "midway-bin deploy --npm=yarn"
   },
   "midway-bin-clean": [

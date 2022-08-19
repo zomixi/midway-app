@@ -1,7 +1,7 @@
 service: cloud-service ## 应用发布到云平台的名字
 
 provider:
-  name: aws ## 发布的云平台，aliyun，tencent 等
+  name: aliyun ## 发布的云平台，aliyun，tencent 等
 
 aggregation: ## 对 HTTP 函数使用聚合模式部署
   cloud-server: ## 部署的函数名
