@@ -1,0 +1,14 @@
+service: cloud-service ## 应用发布到云平台的名字
+
+provider:
+  name: aws ## 发布的云平台，aliyun，tencent 等
+
+aggregation: ## 对 HTTP 函数使用聚合模式部署
+  cloud-server: ## 部署的函数名
+    deployOrigin: false # 是否部署原始方法
+    functionsPattern: ## 匹配的函数规则
+      - '*'
+
+custom:
+  customDomain:
+    domainName: auto ## 自动生成域名
